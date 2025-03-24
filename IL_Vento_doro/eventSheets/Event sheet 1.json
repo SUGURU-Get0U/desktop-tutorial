@@ -1,5 +1,10 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "script",
+			"script": ""
+		}
+	],
 	"sid": 468326106367382
 }

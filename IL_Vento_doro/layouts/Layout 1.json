@@ -2,10 +2,70 @@
 	"name": "Layout 1",
 	"layers": [
 		{
-			"name": "Layer 0",
+			"name": "BG",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "Tilemap",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 3,
+					"sid": 963942951328653,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 62,
+							"height": 54,
+							"max-width": 64,
+							"max-height": 67,
+							"data": "25x2,42x0,25x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,49x0,9,17x2,50x0,17x2,50x0,17x2,50x0,17x2,53x0,14x2,53x0,14x2,53x0,14x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,53x0,14x2,53x0,14x2,53x0,14x2,14x0,2,35x0,17x2,50x0,17x2,50x0,17x2,8x0,2,41x0,17x2,43x0,2,6x0,17x2,43x0,2,6x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,45x0,2,4x0,17x2,45x0,2,4x0,17x2,45x0,2,4x0,17x2,53x0,14x2,53x0,14x2,14x0,2,33x0,2,4x0,14x2,48x0,2,4x0,14x2,48x0,2,4x0,14x2,48x0,2,4x0,14x2,14x0,2,38x0,14x2,14x0,2,38x0,14x2,8x0,2,5x0,2,35x0,17x2,8x0,2,5x0,2,35x0,17x2,8x0,2,5x0,2,35x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,42x0,25x2,42x0,25x2,42x0,25x2,42x0,25x2,42x0,25x2,42x0,25x2,176x0"
+						},
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"instanceFolderItem": {
+						"sid": 963942951328653,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -2.047112152532037,
+						"y": 133.62005255170752,
+						"width": 1001,
+						"height": 866.2976042032983,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 106672297530809,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -34,6 +94,103 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+		},
+		{
+			"name": "Entities",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Playerr",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"sid": 912506795327162,
+					"tags": "",
+					"instanceVariables": {
+						"HP": 3
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 170,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 300,
+								"gravity": 1000,
+								"max-fall-speed": 1000,
+								"double-jump": true,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 912506795327162,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 77,
+						"y": 240,
+						"width": 32,
+						"height": 32,
+						"originX": 0.59375,
+						"originY": 0.40625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 508999035387536,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
 		}
 	],
 	"scene-graphs-folder-root": {
@@ -43,8 +200,8 @@
 	"sid": 536355887917181,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 640,
-	"height": 360,
+	"width": 1000,
+	"height": 1000,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
