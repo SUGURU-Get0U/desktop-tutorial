@@ -2,8 +2,200 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
-			"eventType": "script",
-			"script": ""
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "movement",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 793735784182147,
+									"parameters": {
+										"key": 39
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Playerr",
+									"sid": 522607008182323,
+									"behaviorType": "Platform",
+									"parameters": {
+										"control": "right"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Playerr",
+									"sid": 309394006480451,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 780542877918692
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 201938992491022,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Playerr",
+									"sid": 661476113015486,
+									"behaviorType": "Platform",
+									"parameters": {
+										"control": "left"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Playerr",
+									"sid": 919629088773960,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 514397700915385
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Teclado",
+									"sid": 944880786965027,
+									"parameters": {
+										"key": 38
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Playerr",
+									"sid": 138708347049160,
+									"behaviorType": "Platform",
+									"parameters": {
+										"control": "jump"
+									}
+								}
+							],
+							"sid": 747179529301023
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-on-floor",
+									"objectClass": "Playerr",
+									"sid": 416831050428191,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [],
+							"sid": 981678087525085,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-moving",
+											"objectClass": "Playerr",
+											"sid": 259102434165033,
+											"behaviorType": "Platform",
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Playerr",
+											"sid": 202985982069283,
+											"parameters": {
+												"animation": "\"idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 731367634645341
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-moving",
+											"objectClass": "Playerr",
+											"sid": 895317235822385,
+											"behaviorType": "Platform"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Playerr",
+											"sid": 798451213729024,
+											"parameters": {
+												"animation": "\"run\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 695900322567715
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-jump",
+									"objectClass": "Playerr",
+									"sid": 356583336873843,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Playerr",
+									"sid": 935882654124750,
+									"parameters": {
+										"animation": "\"jump\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 444243472018136
+						}
+					],
+					"sid": 713844212724340
+				}
+			],
+			"sid": 340548087151603
 		}
 	],
 	"sid": 468326106367382
