@@ -19,6 +19,22 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "is-animation-playing",
+									"objectClass": "Playerr",
+									"sid": 221011147363769,
+									"parameters": {
+										"animation": "\"attack\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 545601434562637
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "key-is-down",
 									"objectClass": "Teclado",
 									"sid": 793735784182147,
@@ -190,12 +206,57 @@
 								}
 							],
 							"sid": 444243472018136
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-falling",
+									"objectClass": "Playerr",
+									"sid": 616032308757558,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Playerr",
+									"sid": 602247816163040,
+									"parameters": {
+										"animation": "\"fall\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 823668601723302
 						}
 					],
 					"sid": 713844212724340
 				}
 			],
 			"sid": 340548087151603
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 405659045785012
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Camera",
+					"sid": 380565133624909,
+					"parameters": {
+						"x": "lerp(Self.X, Playerr.X, 0.03)",
+						"y": "lerp(Self.Y, Playerr.Y, 0.03)"
+					}
+				}
+			],
+			"sid": 549629712242878
 		}
 	],
 	"sid": 468326106367382

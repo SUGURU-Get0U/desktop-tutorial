@@ -18,11 +18,6 @@
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 110306195244821
-		},
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 609173041332852
 		}
 	],
 	"effectTypes": [],
@@ -484,7 +479,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6504746,
+						"imageSpriteId": 851469,
 						"collisionPoly": {
 							"points": [
 								0.21875,
