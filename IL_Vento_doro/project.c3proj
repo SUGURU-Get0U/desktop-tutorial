@@ -47,13 +47,6 @@
 			"name": "Scroll To",
 			"author": "Scirra",
 			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
-			"author": "Scirra",
-			"bundled": false
 		}
 	],
 	"uniqueId": "y9xu0lkfpbq",
