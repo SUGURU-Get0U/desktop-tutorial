@@ -7,6 +7,161 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "Camera",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5,
+					"sid": 992361429703835,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 992361429703835,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -73,
+						"y": 780,
+						"width": 39,
+						"height": 47,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TiledBackground3",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 6,
+					"sid": 910830094971538,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 910830094971538,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -15,
+						"y": 607,
+						"width": 1018,
+						"height": 356,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tilemap2",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 7,
+					"sid": 392541872970295,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 31,
+							"height": 31,
+							"max-width": 31,
+							"max-height": 31,
+							"data": "961x0"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"instanceFolderItem": {
+						"sid": 392541872970295,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1000,
+						"height": 1000,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Tilemap",
 					"properties": {
 						"initially-visible": true,
@@ -20,12 +175,12 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 3,
-					"sid": 963942951328653,
+					"uid": 8,
+					"sid": 329735750376984,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
-						"Sólido": {
+						"Solid": {
 							"properties": {
 								"enabled": true,
 								"tags": ""
@@ -34,11 +189,11 @@
 					},
 					"ownData": {
 						"tilemapData": {
-							"width": 62,
+							"width": 63,
 							"height": 54,
-							"max-width": 64,
-							"max-height": 67,
-							"data": "25x2,42x0,25x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,49x0,9,17x2,50x0,17x2,50x0,17x2,50x0,17x2,53x0,14x2,53x0,14x2,53x0,14x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,53x0,14x2,53x0,14x2,53x0,14x2,14x0,2,35x0,17x2,50x0,17x2,50x0,17x2,8x0,2,41x0,17x2,43x0,2,6x0,17x2,43x0,2,6x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,45x0,2,4x0,17x2,45x0,2,4x0,17x2,45x0,2,4x0,17x2,53x0,14x2,53x0,14x2,14x0,2,33x0,2,4x0,14x2,48x0,2,4x0,14x2,48x0,2,4x0,14x2,48x0,2,4x0,14x2,14x0,2,38x0,14x2,14x0,2,38x0,14x2,8x0,2,5x0,2,35x0,17x2,8x0,2,5x0,2,35x0,17x2,8x0,2,5x0,2,35x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,50x0,17x2,42x0,25x2,42x0,25x2,42x0,25x2,42x0,25x2,42x0,25x2,42x0,25x2,176x0"
+							"max-width": 79,
+							"max-height": 89,
+							"data": "21x0,30x2,59x0,30x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,81x0,8x2,81x0,8x2,64x0,2,16x0,8x2,64x0,2,16x0,8x2,64x0,2,16x0,8x2,64x0,2,16x0,8x2,81x0,8x2,86x0,3x2,86x0,3x2,67x0,2,18x0,3x2,67x0,2,18x0,3x2,67x0,2,18x0,3x2,67x0,2,18x0,3x2,67x0,2,13x0,8x2,81x0,8x2,81x0,8x2,81x0,8x2,70x0,2,10x0,8x2,70x0,2,15x0,3x2,70x0,2,6x0,2,8x0,3x2,70x0,2,6x0,2,8x0,3x2,70x0,2,6x0,2,8x0,3x2,77x0,2,8x0,3x2,77x0,2,8x0,3x2,86x0,3x2,75x0,2,10x0,3x2,75x0,2,10x0,3x2,75x0,2,10x0,3x2,75x0,2,10x0,3x2,75x0,2,10x0,3x2,75x0,2,10x0,3x2,86x0,3x2,86x0,3x2,86x0,3x2,86x0,3x2,86x0,3x2,86x0,3x2,86x0,3x2,79x0,2x2,5x0,3x2,79x0,2x2,5x0,3x2,79x0,2x2,5x0,3x2,79x0,10x2,79x0,2x2,5x0,3x2,79x0,2x2,5x0,3x2,79x0,2x2,5x0,3x2,79x0,2x2,5x0,3x2,60x0,29x2,60x0,29x2,60x0,29x2,60x0,29x2,235x0,2,1137x0"
 						},
 						"tile-width": 16,
 						"tile-height": 16,
@@ -48,7 +203,7 @@
 						"tile-y-spacing": 0
 					},
 					"instanceFolderItem": {
-						"sid": 963942951328653,
+						"sid": 329735750376984,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -57,10 +212,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -2.047112152532037,
-						"y": 133.62005255170752,
-						"width": 1001,
-						"height": 866.2976042032983,
+						"x": 977,
+						"y": 548,
+						"width": 1016,
+						"height": 878.2976042032983,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -136,11 +291,6 @@
 								"default-controls": true,
 								"enabled": true
 							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
 						}
 					},
 					"instanceFolderItem": {
@@ -153,8 +303,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 77,
-						"y": 240,
+						"x": 66,
+						"y": 784,
 						"width": 32,
 						"height": 32,
 						"originX": 0.59375,
@@ -170,50 +320,48 @@
 					}
 				},
 				{
-					"type": "Sprite",
+					"type": "Tilemap",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "inimigoi",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
 					},
-					"uid": 4,
-					"sid": 767876107249650,
+					"uid": 3,
+					"sid": 963942951328653,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
-						"Plataforma": {
+						"Solid": {
 							"properties": {
-								"max-speed": 330,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"Senóide": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 4,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 50,
-								"magnitude-random": 0,
 								"enabled": true,
-								"live-preview": false
+								"tags": ""
 							}
 						}
 					},
+					"ownData": {
+						"tilemapData": {
+							"width": 63,
+							"height": 54,
+							"max-width": 79,
+							"max-height": 89,
+							"data": "21x0,30x2,59x0,30x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,62x0,2x2,17x0,8x2,81x0,8x2,81x0,8x2,64x0,2,16x0,8x2,64x0,2,16x0,8x2,64x0,2,16x0,8x2,64x0,2,16x0,8x2,81x0,8x2,86x0,3x2,86x0,3x2,67x0,2,18x0,3x2,67x0,2,18x0,3x2,67x0,2,18x0,3x2,67x0,2,18x0,3x2,67x0,2,13x0,8x2,81x0,8x2,81x0,8x2,81x0,8x2,70x0,2,10x0,8x2,70x0,2,15x0,3x2,70x0,2,6x0,2,8x0,3x2,70x0,2,6x0,2,8x0,3x2,70x0,2,6x0,2,8x0,3x2,77x0,2,8x0,3x2,77x0,2,8x0,3x2,86x0,3x2,75x0,2,10x0,3x2,75x0,2,10x0,3x2,75x0,2,10x0,3x2,75x0,2,10x0,3x2,75x0,2,10x0,3x2,75x0,2,10x0,3x2,86x0,3x2,86x0,3x2,86x0,3x2,86x0,3x2,86x0,3x2,86x0,3x2,86x0,3x2,79x0,2x2,5x0,3x2,79x0,2x2,5x0,3x2,79x0,2x2,5x0,3x2,79x0,10x2,79x0,2x2,5x0,3x2,79x0,2x2,5x0,3x2,79x0,2x2,5x0,3x2,79x0,2x2,5x0,3x2,60x0,29x2,60x0,29x2,60x0,29x2,60x0,29x2,235x0,2,1137x0"
+						},
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
 					"instanceFolderItem": {
-						"sid": 767876107249650,
+						"sid": 963942951328653,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -222,157 +370,18 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1095,
-						"y": 301,
-						"width": 48,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 4,
+						"y": 154,
+						"width": 1016,
+						"height": 878.2976042032983,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "inimigoi",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 5,
-					"sid": 698715324662645,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Plataforma": {
-							"properties": {
-								"max-speed": 330,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"Senóide": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 4,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 50,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 698715324662645,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 452.047300343758,
-						"y": 246.29339394478947,
-						"width": 48,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "inimigoi",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 6,
-					"sid": 370624039551853,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Plataforma": {
-							"properties": {
-								"max-speed": 330,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"Senóide": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 4,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 70,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 370624039551853,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 782.2107645771149,
-						"y": 244.70288522974772,
-						"width": 48,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 0
 					}
 				}

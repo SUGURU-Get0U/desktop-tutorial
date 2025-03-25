@@ -8,8 +8,8 @@
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
-			"name": "Sólido",
-			"sid": 157214355173946
+			"name": "Solid",
+			"sid": 607541760569656
 		}
 	],
 	"effectTypes": [],
@@ -26,5 +26,21 @@
 		"useCollisionPoly": true,
 		"tag": ""
 	},
-	"tile-collision-polys": {}
+	"tile-collision-polys": {
+		"1": {
+			"collisionPoly": {
+				"points": [
+					0.0625,
+					0.0625,
+					0.9392856870378766,
+					0.060714244842529276,
+					0.9375,
+					1,
+					0.0625,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		}
+	}
 }
