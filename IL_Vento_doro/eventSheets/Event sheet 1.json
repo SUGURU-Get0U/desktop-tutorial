@@ -3,7 +3,104 @@
 	"events": [
 		{
 			"eventType": "script",
-			"script": ""
+			"script": []
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite",
+					"sid": 276034468470797
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 474900485893866,
+					"parameters": {
+						"animation": "choose(\"inimigoi\",\"inimigor\")",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 509367838511586
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 318346785096609,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 347776628664321,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 433967524790552,
+							"parameters": {
+								"first-value": "Sprite.Senóide.CyclePosition",
+								"comparison": 2,
+								"second-value": "0.25"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 768826410984862,
+							"parameters": {
+								"first-value": "Sprite.Senóide.CyclePosition",
+								"comparison": 4,
+								"second-value": "0.75"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Sprite",
+							"sid": 451779681216264,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 768372241130172,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 513817463671779
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Sprite",
+							"sid": 480331248829533,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 637416529787122
+				}
+			]
 		}
 	],
 	"sid": 468326106367382
